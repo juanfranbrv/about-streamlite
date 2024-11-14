@@ -19,7 +19,26 @@ navegacion = st.navigation([
     pagina_textos,
     pagina_botones,
     pagina_links,
-    pagina_imagenes] 
+    pagina_imagenes,
+
+    
+    
+    st.Page("widgets_de_entrada.py", title="Widgets de entrada", url_path="widgets_de_entrada"),
+
+     st.Page("widgets_de_salida.py", title="Widgets de salida", url_path="widgets_de_salida"),
+
+     st.Page("ejercicios.py"),
+
+     st.Page("visualización_de_datos.py"),
+
+     st.Page("diseño_interfaz.py",),
+
+     st.Page("tips.py", title="Tips", url_path="tips"),
+
+
+    
+    
+    ] 
     
 )
 
