@@ -2,6 +2,9 @@ import streamlit as st
 
 
 
+
+
+
 # Definir las páginas de la aplicación
 pagina_inicio = st.Page("inicio.py", title="Inicio", url_path="inicio")
 
@@ -42,5 +45,36 @@ navegacion = st.navigation([
     
 )
 
+
+
 # Ejecutar la navegación
 navegacion.run()
+
+# Cambiar el tipo de letra y tamaño globalmente con CSS
+st.markdown(
+    """
+    <style>
+    /* Cambiar el tipo de letra y tamaño para todo el cuerpo */
+    html, body, [class*="css"] {
+        font-family: 'Montserrat';
+        font-size: 20px; 
+    }
+    /* Ajustar encabezados si es necesario */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat'
+    }
+
+     /* Personalizar tamaño de encabezados */
+    h1 {
+        font-size: 28px; /* Ajusta el tamaño del encabezado h1 */
+    }
+    h2 {
+        font-size: 24px; /* Ajusta el tamaño del encabezado h2 */
+    }
+    h3 {
+        font-size: 20px; /* Ajusta el tamaño del encabezado h3 */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)

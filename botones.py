@@ -8,6 +8,15 @@ st.set_page_config(page_title="Ejemplo de Botones en Streamlit", page_icon="🔘
 st.title("Ejemplo Básico de Botones en Streamlit")
 st.write("Esta página muestra cómo funcionan los botones en Streamlit y cómo pueden ser útiles en una aplicación.")
 
+st.write("Para entender el funcionamiento de los botones es imprescindible comprender esto:")
+
+st.write("**El flujo de ejecucion en Streamlit es lineal e interactivo**: Streamlit ejecuta el código de arriba hacia abajo cada vez que ocurre un cambio o interacción en la página (como hacer clic en un botón o ajustar un control deslizante).")
+
+st.write("Cada botón (st.button) devuelve un valor booleano (True o False) que indica si el botón ha sido presionado o no durante la ejecución desencadenada por el clic en el botón")
+
+st.write("Esto significa que al hacer clic, Streamlit vuelve a ejecutar todo el código, y en esa ejecución específica, st.button devuelve True.")
+
+
 # 1. Botón básico
 st.header("1. Botón Básico")
 if st.button("Presiona este botón"):
