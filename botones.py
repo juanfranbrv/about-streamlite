@@ -12,9 +12,11 @@ st.write("Para entender el funcionamiento de los botones es imprescindible compr
 
 st.write("**El flujo de ejecucion en Streamlit es lineal e interactivo**: Streamlit ejecuta el código de arriba hacia abajo cada vez que ocurre un cambio o interacción en la página (como hacer clic en un botón o ajustar un control deslizante).")
 
-st.write("Cada botón (st.button) devuelve un valor booleano (True o False) que indica si el botón ha sido presionado o no durante la ejecución desencadenada por el clic en el botón")
+st.write("**Cada botón (st.button) devuelve un valor booleano** (True o False) que indica si fue ese botón el que desencadeno la ejecucion en curso")
 
 st.write("Esto significa que al hacer clic, Streamlit vuelve a ejecutar todo el código, y en esa ejecución específica, st.button devuelve True.")
+
+st.write("**Los botones (st.button) se muestran siempre que el código que los crea es ejecutado, incluso cuando están dentro de un bloque if**")
 
 
 # 1. Botón básico

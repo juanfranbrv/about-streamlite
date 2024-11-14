@@ -38,6 +38,8 @@ navegacion = st.navigation([
 
      st.Page("tips.py", title="Tips", url_path="tips"),
 
+     st.Page("ejercicio1.py"),
+
 
     
     
