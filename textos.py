@@ -99,7 +99,19 @@ st.write("Puedes agregar íconos y emojis para hacer que la app sea más visual 
 st.write("Aquí algunos ejemplos: 🌍 📈 🐍 🎉 ✅")
 
 # 10. Notificaciones de estado con st.success, st.info, st.warning, y st.error
+
 st.header("10. Notificaciones de estado")
+
+st.code("""
+
+st.header("10. Notificaciones de estado")
+st.success("✅ Esta es una notificación de éxito.")
+st.info("ℹ️ Esta es una notificación de información.")
+st.warning("⚠️ Esta es una notificación de advertencia.")
+st.error("❌ Esta es una notificación de error.")
+
+""")
+
 st.success("✅ Esta es una notificación de éxito.")
 st.info("ℹ️ Esta es una notificación de información.")
 st.warning("⚠️ Esta es una notificación de advertencia.")
@@ -107,7 +119,12 @@ st.error("❌ Esta es una notificación de error.")
 
 # 11. Mostrar un mensaje personalizado con st.toast
 st.header("11. Mensaje personalizado con st.toast")
+st.code("""
+
 st.toast("Este es un toast, un mensaje temporal que aparece en la esquina")
+
+""")
+st.toast("Este es un toast, un mensaje temporal que aparece en la esquina de la pagina cada vez que se ejecuta el script")
 
 # 12. Texto personalizado en el sidebar
 st.sidebar.header("Texto en la barra lateral")
