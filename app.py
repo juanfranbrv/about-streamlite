@@ -49,7 +49,7 @@ navegacion = st.navigation(
             title="📤 Widgets de salida",
             url_path="widgets_de_salida",
         ),
-        st.Page("Estado.py", title="🔄 Estado"),
+        st.Page("estado.py", title="🔄 Estado"),
         st.Page("visualización_de_datos.py", title="📊 Visualizacion de datos"),
         st.Page("diseño_interfaz.py", title="🎨 Diseño de interfaz"),
         st.Page("tips.py", title="💡 Tips", url_path="tips"),
